@@ -5,9 +5,9 @@ import About from "./components/About";
 import OurServices from "./components/OurServices";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import Appointment from "./components/Appointment.JSX";
 import Gallery from "./components/Gallery";
 import ContactUs from "./components/ContactUs";
+import Appointment from "./components/Appointment";
 
 
 export default function App() {
