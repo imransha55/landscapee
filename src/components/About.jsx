@@ -3,7 +3,8 @@ import { FaLeaf, FaTools } from "react-icons/fa";
 import ServiceCard from "./ServiceCard";
 import { useEffect, useState } from "react";
 import FallingLeaves from "./FallingLeaves";
-// import { ServiceCard } from "./ServiceCard";
+// import { ServiceCard } from "./ServiceCard"
+import yearofexp from "../assets/lawn-care.png";
 
 export default function About() {
    const [count, setCount] = useState(0);
@@ -163,7 +164,7 @@ export default function About() {
         {/* Circular Image */}
         <div className="relative w-80 ml-19 h-80 md:w-[550px] md:h-[455px] rounded-full overflow-hidden shadow-xl">
           <img
-            src="/src/assets/lawn-care.png"
+           src={yearofexp}
             alt="Landscape Worker"
             className="object-cover w-full h-full"
           />
