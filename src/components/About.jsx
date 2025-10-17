@@ -5,7 +5,13 @@ import { useEffect, useState } from "react";
 import FallingLeaves from "./FallingLeaves";
 // import { ServiceCard } from "./ServiceCard"
 import yearofexp from "../assets/lawn-care.png";
-
+import lawnboy from "../assets/lawnboy.png"
+import tubeplant from "../assets/tubeplant.png"
+import plant1 from "../assets/plant1.png"
+import plant2 from "../assets/plant2.png"
+import plant3 from "../assets/plant3.png"
+import plant4 from "../assets/plant4.png"
+import plant5 from "../assets/plant5.png"
 export default function About() {
    const [count, setCount] = useState(0);
 
@@ -33,11 +39,11 @@ export default function About() {
   }, []);
   const plantImages = [
   
-  "/src/assets/plant1.png",
-  "/src/assets/plant2.png",
-  "/src/assets/plant3.png",
-  "/src/assets/plant4.png",
-  "/src/assets/plant5.png",
+plant1, 
+ plant2,
+ plant3,
+ plant4,
+ plant5,
  
 ];  const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -259,7 +265,7 @@ export default function About() {
         {/* Center Image */}
         <div className="relative my-10 md:my-0 flex items-center justify-center">
           <motion.img
-            src="/src/assets/tubeplant.png"
+            src={tubeplant}
             alt="Tube Plant"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
@@ -315,7 +321,7 @@ export default function About() {
     className="md:w-1/2 flex justify-center mb-10 md:mb-0"
   >
     <motion.img
-      src="/src/assets/lawnboy.png"  // 🔄 replace with your landscaper image
+      src={lawnboy} // 🔄 replace with your landscaper image
       alt="Landscaping Expert"
       whileHover={{ scale: 1.05, rotate: 1 }}
       transition={{ type: "spring", stiffness: 120 }}
